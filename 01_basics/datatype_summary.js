@@ -45,8 +45,31 @@ const detail = {
 }
 
 const myfunction = function(){
-    console.log("Hello World!");
+    // console.log("Hello World!");
 }
 
-console.log(typeof BigNumber);
-console.log(typeof outsideTemp);
+// console.log(typeof BigNumber);
+// console.log(typeof outsideTemp);
+
+// +++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (primitve) , Heap (Non-Primitive)
+
+let Id = "Kunal"
+let newName = Id
+newName = "Rahul"
+
+console.log(Id);
+console.log(newName);
+
+let userOne = {
+    email: "kunal@google.com",
+    upi : "user@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "kunal@microsoft.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
