@@ -559,3 +559,83 @@ else
 document.write(`${num} is not neon number ${neon}.`)
 
 */
+
+/* 
+// 5. WAP to check whether a number is Armstrong number or not
+
+var num =  parseInt(prompt("Enter the number "))
+var n = num
+var arm = 0
+var len = String(num).length
+console.log(len);
+
+while(num != 0){
+    var rem = num % 10
+    arm = arm + rem**len
+    num = parseInt(num/10)
+
+}
+if (n == arm){
+    document.write(`${n} is armstrong number`)
+}else{
+    document.write(`${n} is not armstrong number`);
+}
+
+*/
+
+
+/* 
+
+//  6. WAP to check whether a number is Palindrome Number or not (121,1234321)
+
+let num = 121  //parseInt(prompt("Enter the number : "))
+let n = num
+let pal = 0
+
+while(num != 0){
+    let r = num % 10
+    // console.log(r);
+    pal = 10*pal + r
+    console.log(pal);
+    num = parseInt(num/2)
+}
+if (n == pal){
+    // document.write(`${n} is palindrome number.`)
+    console.log("plaindrome",pal,n);
+}else{
+    // document.write(`${n} is not palindrome number.`)
+    console.log(" not plaindrome",pal,n);
+}
+*/
+
+
+
+//  WAP to check whether a number is Magical Number or not (81,1458,1729)
+
+
+var num = parseInt(prompt("Enter the number :"))
+var sum = 0
+var rev = 0
+var n = num
+
+while ( num != 0){
+    let r = num % 10 
+    sum  =  sum + r
+    num = parseInt(num/2 )
+}
+
+num = sum
+while (num != 0){
+    let rem = num % 10
+    rev =  rev + 10*r
+    num = parseInt(num / 10)
+}
+
+if (sum * rev  == n)
+document.write(`${n} is a magical Number.`)
+else
+document.write(`${n} is not a magical number`)
+
+
+
+
