@@ -612,7 +612,7 @@ if (n == pal){
 
 //  WAP to check whether a number is Magical Number or not (81,1458,1729)
 
-
+/* 
 var num = parseInt(prompt("Enter the number :"))
 var sum = 0
 var rev = 0
@@ -636,6 +636,13 @@ document.write(`${n} is a magical Number.`)
 else
 document.write(`${n} is not a magical number`)
 
+*/
 
 
-
+/* 
+var a = "javaScript is a scripting language"
+// console.log(a);
+for (let i = 0; i<a.length; i++){
+    console.log(a[i]);
+}
+*/
