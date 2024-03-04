@@ -75,6 +75,7 @@ console.log(a.concat(b,c,d));
 
 // ****************************ENTRIES***************
 
+/** 
 var a = [10,20,30,40,50,60,70,80,90,100]
 var b = a.entries()
 for (let item of b){
@@ -83,4 +84,18 @@ for (let item of b){
 
 for (let items in a){
     console.log(a[items]);
+}
+
+*/
+
+var arr =  [120,130,14,17,83,36,25,15,45,65,15,75,57,58,59,51,50]
+
+// console.log(arr);
+function check(item){
+    return item % 5 == 0
+}
+
+for(let i in arr){
+    var a = check(arr[i])
+    console.log(a);
 }
