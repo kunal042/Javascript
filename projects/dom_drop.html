@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+        }
+        .menu{
+            width: 30%;
+        }
+
+        .menu h3{
+            background-color: darkseagreen;
+            color: white;
+            padding: 10px;
+        }
+
+        .icon{
+            float: right;
+            cursor: pointer;
+        }
+        ul{
+            list-style-type: none;
+            margin-left: -40px;
+            margin-top: 2px;
+
+        }
+        li{
+            background-color: darkseagreen;
+            padding: 10px;
+            margin-bottom: 1px;
+        }
+
+        li:hover{
+            background-color: rgb(130, 191, 130);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .hide{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <h3>Menu <span class="material-symbols-outlined icon" onclick="fun()">menu</span>  </h3>
+            <div class="items hide">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>   
+    </div>
+<script>
+
+    var items = document.querySelector(".items")
+    function fun(){
+        items.classList.toggle("hide")
+    }
+
+
+</script>
+    
+</body>
+</html>
