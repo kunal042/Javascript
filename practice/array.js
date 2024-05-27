@@ -84,9 +84,7 @@ for (let item of b){
 
 for (let items in a){
     console.log(a[items]);
-}
-
-*/
+}  */
 
 var arr =  [120,130,14,17,83,36,25,15,45,65,15,75,57,58,59,51,50]
 

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .main{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .center{
+        width: 35%;
+        height: 20%;
+        background-color:rgb(211, 222, 222);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 0 20px black;
+
+    }
+
+    .center h3{
+        background-color: yellowgreen;
+        color: rgb(59, 24, 24);
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .timer{
+       display: flex;
+       justify-content: space-between;
+
+    }
+
+    .item{
+        padding: 10px;
+
+    }
+
+    .item h4{
+        background-color: lightsalmon;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px 5px 0 0;
+        border-bottom: 1px solid black ;
+
+    }
+
+    .item h5{
+        background-color: lightsalmon;
+        padding: 10px;
+        text-align: center;
+        border-radius: 0 0 5px 5px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="center" >
+            <h3 id="heading" >This is New Year 2024</h3>
+            <div class="timer">
+                <div class="item">
+                    <h4>Days</h4>
+                    <h5 id="day" >0</h5>
+                </div>
+                <div class="item">
+                    <h4>Hours</h4>
+                    <h5 id="hour" >0</h5>
+                </div>
+                <div class="item">
+                    <h4>Minutes</h4>
+                    <h5 id="minute" >0</h5>
+                </div>
+                <div class="item">
+                    <h4>Second</h4>
+                    <h5 id="second" >0</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script>
+        var center = document.querySelector(".center")
+        var heading= document.getElementById("heading")
+        var day = document.getElementById("day")
+        var hour = document.getElementById("hour")
+        var minute = document.getElementById("minute")
+        var second = document.getElementById("second")
+        var timer = document.querySelector(".timer")
+
+        var targetTime = new Date(2025, 0)
+        setInterval( ()=>{
+            let currentTime = new Date()
+            // console.log(currentTime);
+            let diff = targetTime - currentTime
+
+            if (diff > 0){
+                let x = parseInt(diff/(1000*60*60*24))
+                if (x < 10){
+                    day.innerHTML = `0${x}`
+                }else{
+                    day.innerHTML = `${x}`
+                }
+
+                x = parseInt((diff%(1000*60*60*24))/(1000*60*60))
+                if (x < 10){
+                    hour.innerHTML = `0${x}`
+                }else{
+                    hour.innerHTML = `${x}`                }
+
+                    
+                x = parseInt((diff%(1000*60*60))/(1000*60))
+                if (x < 10){
+                    minute.innerHTML = `0${x}`
+                }else{
+                    minute.innerHTML = `${x}`                
+                }
+
+
+                x = parseInt((diff%(1000*60))/(1000))
+                if (x < 10){
+                    second.innerHTML = `0${x}`
+                }else{
+                    second.innerHTML =  `${x}`                }
+
+
+            }else{
+                center.removeChild(timer)
+                center.style.height='7%'
+                heading.innerHTML = "Happy New Year!!"
+
+            }
+
+        },1000 ) 
+
+
+
+
+    </script>
+</body>
+</html>

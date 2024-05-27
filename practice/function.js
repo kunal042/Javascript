@@ -166,3 +166,7 @@ console.log(prime(10));
 console.log(prime(11));
 console.log(prime(12));
 // console.log(prime(10));
+
+
+
+
