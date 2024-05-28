@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;}
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            display: grid;
+            place-items: center;
+        }
+        .first{
+            width: 80%;
+            height: 80%;
+            background-color: rgb(176, 25, 179);
+            display: grid;
+            place-items: center;
+        }
+        .second{
+            width: 80%;
+            height: 80%;
+            background-color: rgb(140, 13, 13);
+            display: grid;
+            place-items: center;
+        }
+        .third{
+            width: 80%;
+            height: 80%;
+            background-color: rgb(128, 215, 47);
+            display: grid;
+            place-items: center;
+        }
+        .forth{
+            width: 60%;
+            height: 60%;
+            background-color: rgb(28, 89, 203);
+            display: grid;
+            place-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <div class="second">
+                <div class="third">
+                    <div class="forth">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var main = document.querySelector(".main")
+        var first = document.querySelector(".first")
+        var second = document.querySelector(".second")
+        var third = document.querySelector(".third")
+        var forth = document.querySelector(".forth")
+
+        main.addEventListener("click", ()=> alert("Main Event is called"), true)
+        first.addEventListener("click", ()=> alert("first Event is called"), true)
+        second.addEventListener("click", ()=> alert("second Event is called"), true)
+        second.addEventListener("click", ()=> alert("second Event is called"), true)
+        forth.addEventListener("click", ()=> alert("forth Event is called"), true)
+    </script>
+</body>
+</html>
