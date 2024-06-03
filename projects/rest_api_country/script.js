@@ -1,7 +1,7 @@
 
 
 function getAPIData(){
-    var name = document.getElementById('search')
+    const name =  document.getElementById('search')
     if (!name){
         name = "bharat"
     }
