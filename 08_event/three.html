@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript </h1>
+    <button id="start" >Start</button>
+    <button id="stop" >Stop</button>
+    
+
+
+
+<script>
+  const  start = document.getElementById("start")
+  const  stope = document.getElementById("stop")
+  const heading = document.querySelector("h1")
+  let loop;
+ 
+    start.addEventListener("click", () => {
+         loop = setInterval(() => {
+            heading.innerHTML = "Start"
+            console.log("Kunal", Date.now());
+        },1000)
+      
+    })
+
+    stope.addEventListener("click", () => {
+        heading.innerHTML = "Stop"
+        clearInterval(loop)
+
+      
+    })
+
+  
+
+
+//   const callStop = () => {
+//     stope.addEventListener("click", () =>{
+//         heading.innerHTML = "Stop"
+        
+//     })
+//   }
+
+//   const run = setInterval(callStart, 1000)
+//   clearInterval(callStop)
+
+
+</script>
+</body>
+</html>
