@@ -7,6 +7,8 @@
 // console.log(a.toLocaleTimeString())
 
 
+
+
 //2nd Style : new Date(year,month,day,hour,minute,second,milisecond)
 // var a = new Date(2023,7,12,15,25,30,2000)
 // var b = new Date(2023,7,12,15,25,30)

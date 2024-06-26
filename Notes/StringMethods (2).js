@@ -122,6 +122,7 @@ startsWith() : check whether a string start with specific
                sub string or not
 endsWith()   : check whether a string end with specific sub
                string or not
+
 */
 // var msg = prompt("Enter the String : ")
 // if(msg.startsWith("www."))
@@ -146,8 +147,8 @@ var a = "Javascript is a Scripting Language"
 // console.log(a.toUpperCase())
 
 
-//substr() return a substring from pos to number of characters
-//substring() return a substring from pos to pos  characters
+//substr() return a substring from pos to number of characters.
+//substring() return a substring from pos to pos  characters.
 //slice()
 
 // console.log(a.substr(5,10))
@@ -170,13 +171,20 @@ var a = "Javascript is a Scripting Language"
 // console.log(a.replaceAll(" ","-"))
 // console.log(a.replace("Javascript","js"))
 
+
+
 //split()
 // console.log(a.split(" "))
 // console.log(a.split("is"))
 
+
+
 //trim() remove all leading white space characters from string from both side
 //trimStart()remove all leading white space characters from string from left side   
 //trimEnd()remove all leading white space characters from string from right side
+
+
+
 
 // var a = "          Ducat Education Noida     "
 // var b = a.trim()

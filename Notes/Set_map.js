@@ -67,9 +67,9 @@ var emp = new Map([
 //set() of map insert an item in map and if key already exist then
 //set() update keys value
 
-// emp.set("Nitin",120000)
-// emp.set("Naman",50000)
-// console.log(emp)
+emp.set("Nitin",120000)
+emp.set("Naman",50000)
+console.log(emp)
 
 
 

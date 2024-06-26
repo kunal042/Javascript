@@ -115,6 +115,7 @@ Constructor:
 //         console.log(`${this.a} + ${this.b} = ${this.sum}`)
 //     }
 // }
+
 // var obj1 = new Add()
 // var obj2 = new Add()
 // obj1.get(100,200)

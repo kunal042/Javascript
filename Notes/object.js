@@ -121,6 +121,7 @@ var emp = {
 //         `)
 //     }
 // }
+
 // emp.calculate()
 // emp.display()
 
@@ -227,7 +228,7 @@ var emp = {
 //     }
 // }
 // emp.getSalary = 98500
-// emp.display
+// emp.display()
 
 
 //object destructuring
@@ -275,3 +276,4 @@ var e3 = new Employee(1003,"Rahul Sharma",'Trainer',98500,"Faridabad","Haryana")
 console.log(e1)
 console.log(e2)
 console.log(e3)
+

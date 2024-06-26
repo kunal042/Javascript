@@ -88,12 +88,20 @@ join() convert an array into string and you can specify
 // console.log(a.join("|"))
 // console.log(a.join(":"))
 
+
+//  outPut
+// 10,20,30,40,50,60,70,80,90,100
+// 10,20,30,40,50,60,70,80,90,100
+// 10 20 30 40 50 60 70 80 90 100
+// 10=20=30=40=50=60=70=80=90=100
+// 10|20|30|40|50|60|70|80|90|100
+
 /*
 array: push() pop() shift() unshift() splice() delete()
 push():   insert one or more then one element in last of an array
-and return updated length of array
+and return updated length of array.
 pop()     delete an element from last of an array and return deleted
-array element
+array element.
 unshift() insert one or more then one element element in starting
 of an array and return updated length of array
 shift()   delete an element from first position of an array and return deleted
@@ -155,6 +163,7 @@ splice()  used to insert or delete or update elements from any
 
 
 
+
 //entries() generate an iterator which contains key and value of items
 // var a = [10,20,30,40,50,60,70,80,90,100]
 // var b = a.entries()
@@ -168,7 +177,8 @@ splice()  used to insert or delete or update elements from any
 //findIndex() : retunn the index of item from array which pass a test
 //map()       : return an array of containg result for all elements of array
 //filter()    : return an array of items that pass a test
-  
+
+
 var a = [120,130,14,17,83,36,25,15,45,65,15,75,57,58,59,51,50]
 // function check(item){
 //   return item%5==0
@@ -189,14 +199,14 @@ var a = [120,130,14,17,83,36,25,15,45,65,15,75,57,58,59,51,50]
 //   return false
 // }
 
-// console.log(a.find(check))
-// console.log(a.findIndex(check))
+// console.log(a.find(check))  //17
+// console.log(a.findIndex(check))  // 3 (index at value true)
 // console.log(a.map(check))
 // console.log(a.filter(check))
 
 
-// console.log(a.find((item)=>item%5==0))
-// console.log(a.findIndex((item)=>item%5==0))
+// console.log(a.find((item)=>item%5==0))     // 120
+// console.log(a.findIndex((item)=>item%5==0))  // 3 (index at value true)
 // console.log(a.map((item)=>item%5==0))
 // console.log(a.filter((item)=>item%5==0))
 

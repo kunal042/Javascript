@@ -12,6 +12,7 @@ execution phase: this phase contains program statements
 
 so hoisting in js is a machanism where variables and function
 declarations(creation phase) are moved to the top of execution phase
+
 */
 
 //code we write
@@ -40,6 +41,8 @@ in ES6 i.e ECMASCRIPT 2015 hoisting is avoided by let or const
 // "use strict"
 // a = 10
 // console.log(a)
+
+
 
 
 

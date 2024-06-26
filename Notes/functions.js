@@ -115,6 +115,7 @@ syntax:
 //     var sum = x+y   
 //     return sum
 // }
+
 // function sample(){
 //     var a = 10
 //     var b = 20
@@ -256,6 +257,8 @@ no keyword      global
 // console.log("In Main Global Scope")
 // sample()
 // console.log("Back to Main Global Scope")
+
+
 
 
 function fact(num){

@@ -67,14 +67,15 @@ ES6 new Features:
 
 
 /*
+    
     spread operator:Spread operator allows an iterable to expand
     in places where 0+ arguments are expected. It is mostly used
     in the variable array where there is more than 1 values are 
     expected. It allows us the privilege to obtain a list of
     parameters from an array. Syntax of Spread operator is same as 
     Rest parameter but it works completely opposite of it.
-*/
 
+*/
 // function sample(a,b,c,d,e){
 //     console.log(`a = ${a} b = ${b} c = ${c} d = ${d} and e = ${e}`)
 // }

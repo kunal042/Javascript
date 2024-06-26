@@ -46,43 +46,43 @@ console.log(15/6)       //2.5
 console.log(15%6)       //3
 console.log(15**2)      //225
 
-console.log(10+20)
-console.log(10+"20")
-console.log(10+"Hello World")
+console.log(10+20)   //20
+console.log(10+"20")   // 1020
+console.log(10+"Hello World") // 10Hello World
 
+
+console.log(10-20) // -10
+console.log(10-"20")  // -10
+console.log("10"-"20") // -10
+console.log(10-"Hello World")  //NaN
 
 console.log(10-20)
 console.log(10-"20")
 console.log("10"-"20")
 console.log(10-"Hello World")
 
-console.log(10-20)
-console.log(10-"20")
-console.log("10"-"20")
-console.log(10-"Hello World")
+
+console.log(10*20)  //200
+console.log(10*"20")   //200
+console.log("10"*"20")  //200
+console.log(10*"Hello World")   //NaN
 
 
-console.log(10*20)
-console.log(10*"20")
-console.log("10"*"20")
-console.log(10*"Hello World")
+console.log(10/20)   //0.5
+console.log(10/"20")  //0.5
+console.log("10"/"20")   // 0.5
+console.log(10/"Hello World")   // Nan
+
+console.log(10%20)  //10
+console.log(10%"20")   //10
+console.log("10"%"20")  //10
+console.log(10%"Hello World")   //NaN
 
 
-console.log(10/20)
-console.log(10/"20")
-console.log("10"/"20")
-console.log(10/"Hello World")
-
-console.log(10%20)
-console.log(10%"20")
-console.log("10"%"20")
-console.log(10%"Hello World")
-
-
-console.log(10**2)
-console.log(10**"2")
-console.log("10"**"2")
-console.log(10**"Hello World")
+console.log(10**2)   //100
+console.log(10**"2")  //100
+console.log("10"**"2")  //100
+console.log(10**"Hello World")  //NaN
 
 var a = 10*5%30*3/10*7%40*20/10*5-40/2*(3*5**2/15)+6**3
 console.log(a)
